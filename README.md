@@ -8,6 +8,15 @@ Contains Wildfly-Maven plugin for deployment tasks.
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
+1. download jdk 1.8.241 (jdk-8u241-windows.exe)
+installed in C:\Program Files\Java\jdk1.8.0_241\
+2. set system JavaHome to C:\Program Files\Java\jdk1.8.0_241\
+	add C:\Program Files\Java\jdk1.8.0_241\ to system path 
+3. download sts4 (spring tool suite 4)
+4. download wildfly 10.1.0
+5. start sts4, window->show view->other->server
+6. then follow http://doraprojects.net/blog/?p=3307 to add and configure WildFly 10 server in Spring Tool Suite
+
 ### Prerequisites
 
 Wildfly 10.1.0 installed and running during application development. 
