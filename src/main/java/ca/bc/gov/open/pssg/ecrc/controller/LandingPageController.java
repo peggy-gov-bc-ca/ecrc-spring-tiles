@@ -19,6 +19,7 @@ import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -95,6 +96,7 @@ public class LandingPageController {
 		return null;
 	}
 	
+	@GetMapping("/")
 	@RequestMapping(value="/home.htm", method = RequestMethod.GET)
 	public String doLanding(HttpServletRequest request, HttpServletResponse response, Map<String, Object> model) throws RestServiceException, IOException, ECRCException
 	{
